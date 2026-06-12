@@ -1,0 +1,20 @@
+{
+  "name": "Accents",
+  "description": "Easily access accents within your current window.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "icons/logo16.png",
+    "48": "icons/logo48.png",
+    "128": "icons/logo128.png"
+  },
+  "action": {
+    "default_popup": "accents.html",
+    "default_icon": {
+      "16": "icons/logo16.png",
+      "48": "icons/logo48.png",
+      "128": "icons/logo128.png"
+    }
+  },
+  "permissions": ["storage"]
+}

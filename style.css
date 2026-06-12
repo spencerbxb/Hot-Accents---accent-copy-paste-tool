@@ -1,0 +1,147 @@
+body {
+    width: 250px;
+    min-height: 175px;
+
+    background-color: aliceblue;
+    padding-bottom: 10px;
+}
+
+h1{
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+input{
+    height: 25px;
+    font-size: 10px;
+}
+
+option{
+    font-family: inherit;
+}
+
+.lang-selector {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.popup {
+    position: absolute;
+    top: 40px;
+    height: 250px;
+    left: 50%;
+    transform: translateX(-75%);
+
+    width: 220px;
+
+    max-height: 300px;
+    overflow-y: auto;
+
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hidden{
+    display: none;
+}
+
+.lang-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.lang-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.lang-item:hover {
+    background: #f0f0f0;
+}
+
+button{
+    font-size: 20px;
+    height: 50px;
+}
+
+.header-button.active {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.flag-images{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+#list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+
+    padding-bottom: 10px;
+}
+
+#currentFlag {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+
+.header-button {
+    width: 50px;
+    height: 35px;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    justify-content: center;
+
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.overlay-content {
+    width: 320px;
+    max-height: 90vh;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+    scrollbar-gutter: stable;
+}
+
+.hidden {
+    display: none;
+}

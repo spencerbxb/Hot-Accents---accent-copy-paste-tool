@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Accents</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+    <h1>Hot accents</h1>
+
+    <div class="controls">
+        <div class="lang-selector">
+            <button id="langButton" class="header-button">
+                <img id="currentFlag" />
+            </button>
+
+            <button id="capsButton" class="header-button">
+                A
+            </button>
+        </div>
+    </div>
+</div>
+  </div>
+
+    <hr> 
+
+    <div class="table">
+
+    </div>
+    
+    <div id="list"></div>
+  </div>
+
+  <div id="langOverlay" class="overlay hidden">
+    <div class="overlay-content">
+        <div class="lang-grid" id="langGrid"></div>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
