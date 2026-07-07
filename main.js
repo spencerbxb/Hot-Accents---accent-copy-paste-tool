@@ -107,6 +107,7 @@ function buildLanguageGrid() {
 langButton.onclick = (e) => {
     e.stopPropagation();
     langOverlay.classList.remove("hidden");
+    document.body.style.height = "0px";
 };
 
 // close overlay when clicking background only
@@ -130,6 +131,8 @@ capsButton.onclick = () => {
 let capitals = JSON.parse(localStorage.getItem(STORAGE_CAPS)) ?? false;
 let currentLanguage = localStorage.getItem(STORAGE_LANG);
 
+document.body.style.height = "0px";
+
 const isFirstRun = !currentLanguage;
 if (isFirstRun) {
     langOverlay.classList.remove("hidden");
@@ -143,5 +146,3 @@ populateLetters(currentLanguage);
 applyTheme(currentLanguage);
 
 capsButton.textContent = capitals ? "A" : "a";
-
-document.body.style.height = "0px";

@@ -1,6 +1,6 @@
 {
-  "name": "Accents",
-  "description": "Easily access accents within your current window.",
+  "name": "Quick Calc",
+  "description": "Run simple calculations in your browser quickly!",
   "version": "1.0",
   "manifest_version": 3,
   "icons": {
@@ -9,12 +9,11 @@
     "128": "icons/logo128.png"
   },
   "action": {
-    "default_popup": "accents.html",
+    "default_popup": "quickcalc.html",
     "default_icon": {
       "16": "icons/logo16.png",
       "48": "icons/logo48.png",
       "128": "icons/logo128.png"
     }
   },
-  "permissions": ["storage"]
 }
